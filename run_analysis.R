@@ -61,7 +61,7 @@ colnames(testdf)[1]<-'activity'
 
 ################################
 
-#Joning the two dataframes and ordering by subject then by activiy
+#Joining the two dataframes and ordering by subject then by activiy
 
 totaldf<-rbind(traindf,testdf)
 
@@ -77,3 +77,6 @@ tidydf<-ddply(totaldf,.(activity,subject),numcolwise(mean))
 
 write.table(tidydf,"tidy.txt",row.name=FALSE)
 
+# Reading file back into are for checking correctness
+
+data <- read.table("tidy.txt", header = TRUE,check.names = FALSE)
