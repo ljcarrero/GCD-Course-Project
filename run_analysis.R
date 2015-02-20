@@ -1,4 +1,4 @@
-# Reading features file an selecting only indexes with mean() or 
+# Reading features file and selecting only indexes with mean() or 
 # std() in it
 
 features<-read.csv("UCI HAR Dataset/features.txt",sep=" ",header=FALSE)
@@ -6,7 +6,7 @@ b <- sapply(features, is.factor)
 features[b] <- lapply(features[b], as.character)
 feature_index<-sort(c(grep('mean()',features$V2,fixed=TRUE),grep('std()',features$V2,fixed=TRUE)))
 
-# Reading activity labels future use
+# Reading activity labels
 
 activity_label<-read.table("UCI HAR Dataset/activity_labels.txt")
 b <- sapply(activity_label, is.factor)
