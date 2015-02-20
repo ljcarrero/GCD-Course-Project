@@ -1,9 +1,9 @@
 # GCD-Course-Project CODEBOOK
 Codebook for Course Project for the Coursera Course Getting and Cleaning Data
 
-******CODEBOOK******
+**CODEBOOK**
 
-*variable name:** activity
+**variable name:** activity
 **type:** Character
 **Description:** Activity done by the person while performing the experiment.
 **Posible values:** WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS, SITTING,STANDING,LAYING
