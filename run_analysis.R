@@ -77,6 +77,6 @@ tidydf<-ddply(totaldf,.(activity,subject),numcolwise(mean))
 
 write.table(tidydf,"tidy.txt",row.name=FALSE)
 
-# Reading file back into are for checking correctness
+# Reading file back into r for checking
 
 data <- read.table("tidy.txt", header = TRUE,check.names = FALSE)
